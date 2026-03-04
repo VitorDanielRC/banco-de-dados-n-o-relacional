@@ -1,0 +1,23 @@
+[
+  {
+    "userEmail": "maria@exemplo.com",
+    "bookIsbn": "978-0140449136",
+    "borrowedAt": { "$date": "2025-08-20T00:00:00.000Z" },
+    "dueAt": { "$date": "2025-09-05T00:00:00.000Z" },
+    "returnedAt": null
+  },
+  {
+    "userEmail": "joao@exemplo.com",
+    "bookIsbn": "978-0140449273",
+    "borrowedAt": { "$date": "2025-08-10T00:00:00.000Z" },
+    "dueAt": { "$date": "2025-08-25T00:00:00.000Z" },
+    "returnedAt": { "$date": "2025-08-22T00:00:00.000Z" }
+  },
+  {
+    "userEmail": "joao@exemplo.com",
+    "bookIsbn": "978-8535927887",
+    "borrowedAt": { "$date": "2025-08-26T00:00:00.000Z" },
+    "dueAt": { "$date": "2025-09-02T00:00:00.000Z" },
+    "returnedAt": null
+  }
+]
