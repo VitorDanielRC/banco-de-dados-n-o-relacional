@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Maria Silva",
+    "email": "maria@exemplo.com",
+    "age": 30,
+    "address": {
+      "street": "Rua das Flores, 123",
+      "city": "Maricá",
+      "state": "RJ"
+    }
+  },
+  {
+    "name": "João Souza",
+    "email": "joao@exemplo.com",
+    "age": 25,
+    "address": {
+      "street": "Av. Central, 456",
+      "city": "Niterói",
+      "state": "RJ"
+    }
+  },
+  {
+    "name": "Ana Costa",
+    "email": "ana@exemplo.com",
+    "age": 28,
+    "address": {
+      "street": "Rua B, 789",
+      "city": "São Gonçalo",
+      "state": "RJ"
+    }
+  }
+]
