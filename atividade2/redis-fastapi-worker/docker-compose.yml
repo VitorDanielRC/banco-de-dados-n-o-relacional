@@ -1,0 +1,32 @@
+services:
+  redis:
+    image: redis:7
+    container_name: redis_service
+    ports:
+      - "6379:6379"
+    networks:
+      - app_network
+
+  api:
+    build: .
+    container_name: fastapi_api
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    networks:
+      - app_network
+
+  worker:
+    build: .
+    container_name: redis_worker
+    command: python -m app.worker
+    depends_on:
+      - redis
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
